@@ -17,26 +17,26 @@
 }
 
 .header {
-    grid-area: header;
+    padding: 10px;
     background-color:chocolate;
 }
 
 .left {
-    grid-area: left;
+    padding: 10px;
     background-color: gray;
 }
 
 .content {
-    grid-area: content;
+    padding: 10px;
     background-color: forestgreen;
 }
 
 .right {
-    grid-area: right;
+    padding: 10px;
     background-color: black;
 }
 
 .footer {
-    grid-area: footer;
+   padding: 10px;
    background-color: orange;
 }
