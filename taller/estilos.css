@@ -4,8 +4,8 @@
 
 .container {
     display: grid;
-    grid-template: 150px 1fr 50px / 200px 1fr;
-    grid-template-areas: "header header" "left content" "footer footer";
+    grid-template: 150px 1fr 50px / 200px 1fr 200px;
+    grid-template-areas: "header header" "left content" "right" "footer footer";
     grid-gap: 5px;
     height: 100vh;
 }
@@ -26,6 +26,11 @@
 
 .content {
     grid-area: content;
+}
+
+.right {
+    grid-area: right;
+    background-color: coral;
 }
 
 .footer {
