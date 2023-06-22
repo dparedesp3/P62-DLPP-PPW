@@ -1,18 +1,15 @@
+img {
+    float: left;
+    width: 200px;
+    clear: both;
+    margin-bottom: 50px;
+}
 
-.limpiar {
+.espacio1, .espacio2 {
     clear: both;
 }
-img{
-    float: left;
-    width: 250px;
-  
-}
 
-p{
+p {
     float: left;
-   
-}
-
-div{
-    float: left;
+    top: 25px;
 }
