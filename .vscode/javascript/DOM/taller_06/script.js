@@ -1,18 +1,20 @@
-function imagen(){
-    imagen = '<img src="tux.png" />'
-    document.getElementById('imagencargando').innerHTML = imagen;
-    }
 
-function cargar() {
+
+
+function upload() {
+  if (!image) {
     var container = document.getElementById('container')
-    var mensaje = document.getElementById('mensaje')
-    var h1 = document.createElement('h1')
-    var texto = document.createTextNode(mensaje.value)
-    h1.appendChild(texto)
-    container.appendChild(h1)
+    var img = document.createElement('img')
+    img.src = 'kirby.png'
+    container.appendChild(img)
+    image = true
+  }
 }
 
-function eliminar(){
-    var container = document.getElementById('container')
-    container.removeChild( container.lastElementChild)
+var image = false
+
+function delete_img() {
+  var container = document.getElementById('container')
+  container.removeChild(container.lastElementChild)
+  image = false
 }
