@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+   <body>
+    <script type="text/javascript">
+        function imagen(){
+        imagen = '<img src="tux.png" alt="cargando..." />'
+        document.getElementById('imagencargando').innerHTML = imagen;
+    }
+        function eliminar(){
+            var container = document.getElementById('container')
+             container.removeChild( container.lastElementChild)
+        }
+    </script>
+        <p>
+        <input type='button' onclick='imagen()' value='Cargar'/>
+        <input type='button' onclick='imagen()' value='Eliminar'/>
+        <div id='imagencargando'></div>
+        </p>
+   </body>
+
