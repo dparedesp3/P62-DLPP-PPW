@@ -6,30 +6,10 @@
     margin: 110px;
 }
 
-.imagen {
-    margin-bottom: 10px;
-    text-align: center;
-    width: 350px;
-    height: 350px;
-}
-
-.img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container {
+#container {
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 120vh;
-}
-
-.div {
-    display: flex;
-    margin-left: 30px;
     justify-content: center;
-   
 }
 
