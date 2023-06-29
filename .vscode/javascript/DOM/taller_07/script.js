@@ -19,8 +19,8 @@ div_cajita.addEventListener('mouseup', function(valor){
 div_cajita.addEventListener('mousemove', function(valor){
     valor.preventDefault()
     if(es_presionado) {
-        div_cajita.style.top= (valor.clientX + offset[0]) + 'px'
-        div_cajita.style.left= (valor.clientY + offset[1]) + 'px'
+        div_cajita.style.left= (valor.clientX + offset[0]) + 'px'
+        div_cajita.style.top= (valor.clientY + offset[1]) + 'px'
     }
     
     console.log('[mousemove]')
