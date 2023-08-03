@@ -30,7 +30,7 @@ console.log( 0 == !!undefined )
 console.log( 0 === !!undefined )
 
 var obj1 = { nombre: 'Leonardo' }
-var obj2 = { nombre: 'David' }
+var obj2 = { nombre: 'Leonardo' }
 
 console.log(obj1 == obj2)
 

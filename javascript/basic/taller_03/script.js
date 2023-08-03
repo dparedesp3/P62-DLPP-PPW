@@ -1,3 +1,7 @@
+
+// ECMAScript 6-8
+//Alcance de las variables
+
 var texto = 'Universidad Politecnica Salesiana'
 
 function imprimir() {
@@ -5,6 +9,9 @@ function imprimir() {
     console.log(texto2)
     console.log(texto)
 }
+
+imprimir()
+
 
 console.log(texto)
 
