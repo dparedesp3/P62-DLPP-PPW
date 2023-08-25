@@ -35,28 +35,26 @@ function cargar_datos(url_api, fn) {
 const invocacionSincronica = function(error, data) {
     if (error)
         return console.error( error )
-
     console.log( data.info.count )
-
     cargar_datos( API + data.results[0].id, function(error2, data2) {
         if (error2)
             return console.error( error2 )
-
         personaje( data2 )
-
         cargar_datos( API + data.results[1].id, function(error3, data3) {
             if (error3)
                 return console.error( error3 )
-    
             personaje( data3 )
-            
             cargar_datos( API + data.results[2].id, function(error4, data4) {
                 if (error4)
                     return console.error( error4 )
-        
                 personaje( data4 )
-            } )    
-        } )    
+                cargar_datos( API + data.results[3].id, function(error5, data5) {
+                    if (error5)
+                        return console.error( error5 )
+                    personaje( data5 )
+                } )
+            } )
+        } )
     } )
 }
 
